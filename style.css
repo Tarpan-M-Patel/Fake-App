@@ -1,0 +1,269 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    max-width: 980px;
+    margin-inline: auto;
+    padding-inline: 20px;
+    overflow: hidden;
+}
+
+.flex {
+    display: flex;
+    flex-direction: row;
+}
+
+.mainPart{
+    display: flex;
+    flex-direction: row;
+}
+
+/* inputpart */
+
+.inputContainer {
+    width: 445px;
+}
+
+.navbar {
+    height: 78px;
+    /* width: 445px; */
+    border: 1px solid #c9c9c9;
+    border-top: 0px;
+    background: #f6f6f7;
+    padding: 15px 0 15px 15px;
+    margin-bottom: 20px;
+    align-items: center;
+}
+
+.navbarImg {
+    background-image: url("images/ifake_text_message_iphone_logo.png");
+    height: 65px;
+    width: 65px;
+    background-repeat: no-repeat;
+}
+
+.inputHeading {
+    background: #f6f6f7;
+    /* width: 445px; */
+    text-align: center;
+    padding: 15px 0;
+    border: 1px solid #c9c9c9;
+    font-family: sans-serif;
+    cursor: pointer;
+    font-weight: 700;
+    margin-bottom: 5px;
+}
+
+/* enter your name section */
+
+.enterName {
+    justify-content: space-between;
+    /* width: 445px; */
+    height: 55px;
+    align-items: center;
+    border: 1px solid #ccc;
+}
+
+.nameLabel {
+    font-size: 20px;
+    margin-left: 20px;
+    font-family: sans-serif;
+    font-weight: 100;
+}
+
+#userName {
+    width: 160px;
+    height: 31px;
+    margin-right: 20px;
+    font-size: 16px;
+}
+
+/* input message part start */
+
+.allInputElements{
+    display: flex;
+    flex-direction: column;
+    height: max-content;
+}
+
+.inputMsg {
+    /* width: 445px; */
+    height: 55px;
+    border: 1px solid #ccc;
+    align-items: center;
+}
+
+/* input tag */
+
+.InputMsgStyle {
+    width: 295px;
+    height: 31px;
+    margin-left: 16px;
+    font-size: 16px;
+}
+
+/* buttons for left and right */
+
+.grey {
+    /* background-color: rgb(159, 155, 155); */
+    /* background-image: url(grey-button.png); */
+    background-repeat: no-repeat;
+    border-radius: 15px;
+}
+
+.blue {
+    /* background-color: rgb(37, 191, 243); */
+    /* background-image: url('blue-button.png'); */
+    background-repeat: no-repeat;
+    border-radius: 15px;
+}
+
+.green {
+    /* background-color: rgb(60, 244, 60); */
+    /* background-image: url('green-button.png'); */
+    background-repeat: no-repeat;
+    border-radius: 15px;
+}
+
+.btn {
+    height: 30px;
+    width: 30px;
+    border: none;
+    text-decoration: none;
+    margin-inline: 2px;
+    background: transparent;
+    /* margin-left: 4px; */
+}
+
+.addBtn {
+    height: 41px;
+    font-size: 20px;
+    color: #0071f0;
+    border: 1px solid #c9c9c9;
+    border-top: 0px;
+    padding-top: 8px;
+    padding-left: 15px;
+    margin-bottom: 5px;
+    cursor: pointer;
+}
+
+.btnForAdd{
+    /* height: 41px; */
+    font-size: 20px;
+    color: #0071f0;
+    border: transparent;
+    border: none;
+    background-color: transparent;
+    text-decoration: transparent;
+
+}
+
+.battery, .connection, .settings {
+    background: #f6f6f7;
+    text-align: center;
+    padding: 15px 0;
+    border: 1px solid #c9c9c9;
+    font-family: sans-serif;
+    cursor: pointer;
+    font-weight: 700;
+}
+
+.createImgBtn{
+    margin: 112px;
+    height: 50px;
+    width: 220px;
+    font-family: sans-serif;
+    color: blue;
+    border: 1px solid blue;
+    background: white;
+    border-radius: 5px;
+    font-size: 18px;
+    font-weight: 10;
+}
+
+.createImgBtn:hover{
+    background-color: blue;
+    color: white;
+}
+
+/* output part */
+
+.outputContainer{
+    height: 800px;
+    height: max-content;
+    width: 445px;
+    margin-top: 20px;
+    margin-bottom: 50px;
+}
+
+.headerPart{
+    background-image: url('images/Screenshot\ 2024-03-27\ 143427.png');
+    height: 89px;
+    width: 438px;
+    border-bottom: 1px solid #c9c9c9;
+
+}
+
+#userOutputName{
+    padding-top: 44px;
+    padding-left: 185px;
+    font-size: 22px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    
+}
+
+.mainOutputPart{
+    height: 580px;
+}
+
+.footerPart{
+    background-image: url("images/Screenshot\ 2024-03-27\ 143447.png");
+    height: 60px;
+    position: relative;
+    bottom: 0px;
+    width: 438px;
+}
+
+/* outputmsg styles */
+
+.outMsg{
+    flex-direction: column;
+    margin-top: 5px;
+}
+
+/* .outputClassMsg{
+    background-image: url("images/bubble_corner_grey.png");
+    background-repeat: no-repeat;
+    background-position: bottom left;
+    height: 45px;
+    margin-left: 5px;
+} */
+
+/* add this class active on change of input tag */
+
+/* .outputClassActiveMsg{
+    background-image: url("images/bubble_corner_grey.png");
+    background-repeat: no-repeat;
+    background-position: bottom left;
+    height: 45px;
+    margin-left: 5px;
+} */
+
+.msgOutput{
+    padding: 10px;
+    font-size: 22px;
+    margin-left: 8px;
+    /* width: max-content; */
+    height: 45px;
+    border-radius: 20px;
+    /* background-color:rgba(229,229,234,255); */
+}
+
+/* .msgActiveOutput{
+    border-radius: 20px;
+    background-color:rgba(229,229,234,255);
+} */

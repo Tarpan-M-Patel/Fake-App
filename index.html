@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fake-App</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+
+<body>
+    <div class="mainPart container">
+        <!-- input part -->
+        <section class="input">
+            <div class="container">
+                <div class="inputContainer">
+                    <div class="navbar flex">
+                        <div class="navbarImg"></div>
+                        <div class="navbartext">
+                            <h2>iFake Text Message</h2>
+                            Create a Fake Text Message Conversation
+                        </div>
+                    </div>
+                    <div class="input">
+                        <div class="inputHeading">
+                            <h3>Text Message Conversation</h3>
+                        </div>
+                        <div class="enterName flex">
+                            <p class="nameLabel">Name</p>
+                            <input type="text" id="userName" placeholder="Name" oninput="getName()">
+                        </div>
+                        <div class="allInputElements" id="allInputId">
+                            <div class="inputMsg flex" id="inputPartOfMsg-0">
+                                <div class="inputTag" id="inputMsgDiv-0">
+                                    <input type="text" id="inputMessage-0" class="InputMsgStyle"
+                                        placeholder="Message..." oninput="getInputIds()">
+                                    <button class="grey btn bleft" id="btnleft-0"><img src="images/grey-button.png" alt=""
+                                            srcset="" class="bleft"></button>
+                                    <button class="blue btn bright" id="btnrightblue-0"><img src="images/blue-button.png" alt=""
+                                            srcset="" class="bright"></button>
+                                    <button class="green btn bright" id="btnrightgreen-0"><img src="images/green-button.png" alt=""
+                                            srcset="" class="bright"></button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="addBtn">
+                            <button class="btnForAdd" onclick="addInputFild()"> + Add Text Message</button>
+                        </div>
+
+                        <div class="battery">
+                            <h3>Battery</h3>
+                        </div>
+
+                        <div class="connection">
+                            <h3>Connection</h3>
+                        </div>
+
+                        <div class="settings">
+                            <h3>Settings</h3>
+                        </div>
+
+                        <div class="createBtn">
+                            <button class="createImgBtn">Create Image</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <!-- output part -->
+        <section class="output">
+            
+            <div class="container">
+                <div class="outputContainer" style="height: 100vh; width: 440px;     border: 1px solid #c9c9c9;">
+                    <div class="headerPart">
+                        <p id="userOutputName">
+                            Name
+                        </p>
+                    </div>
+                    <div class="mainOutputPart">
+                        <div class="outMsg flex" id="allMsgDiv">
+                            <div class="outputClassMsg" id="outputMsg-0">
+                                <p class="msgOutput" id="outputMessage-0">
+                                    
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="footerPart">
+
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    
+</body>
+
+</html>
